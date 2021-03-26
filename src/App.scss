@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+@font-face {
+  font-family: 'Vidu';
+  src: url('./fonts/autumn-in-november.regular.ttf')
+}
+.App {
+  background-color: rgba(247, 149, 145, 0.2);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-behavior: smooth;
+  background-image: url('./assets/lilsweetsfinal.png');
+  background-size:100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  // margin-top: 70px;
+}
+.circle {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  background-color: red;
+}
+.Jenny {
+  font-size: 30px;
+  font-weight: 500;
+}
+.active {
+  background: linear-gradient(135deg, black, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header{
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  background-color: rgba(247, 149, 145, 1);
+  color: white;
+  align-items: center;
+  // justify-content: center;
+  // justify-content: space-between;
+  z-index: 999;
+  &__title {
+    margin: 0 2vw;
+    // margin: 0 15%;
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  &__top {
+    display: flex;
+    // margin-right: 40px;
+    // margin: 0 6vw;
+    // justify-content: center;
+  }
+  &__logo {
+    width: 3%;
+    margin: 10px 30px;
+    // display: inline-block;
+  }
+  &__insta {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-grow:1;
+    padding-right: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    &--logo {
+      width: 40px;
+      padding-left: 10px;
+    }
+  }
+}
+.title {
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 20px;
+  text-align: center;
+  font-family: "Vidu";
+}
+.price {
+  background-color: rgba(247, 149, 145, 0.2);
+  padding-bottom: 20px;
+  &__card {
+    display: flex;
+    // border: 1px solid black;
+    margin: 40px 80px;
+    justify-content: space-around;
+    height: 500px;
+    &__box {
+      width: 100%;
+      text-align: center;
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.8)
+      }
+      &--image {
+        margin-top: 30px;
+        height: 200px;
+        border-radius: 10px;
+      }
+    }
+    &__info {
+      // margin-right: 90px;
+      &--title1 {
+        padding: 10px;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+      }
+      &--title2 {
+        padding: 10px;
+        font-size: 2rem;
+        font-style: italic;
+        font-family: 'Roboto Mono', monospace;
+      }
+      &--title3 {
+        padding: 10px;
+        font-size: 1rem;
+        font-weight: 300;
+        height: 50px;
+      }
+      &--title4 {
+        background-color: rgba(247, 149, 145, 1);
+        padding:10px;
+      }
+    }
+  }
+}
+option select{
+  padding: 20px;
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 600px;
+  ;
+  &__form {
+    // align-items: center;
+    &__box {
+      padding-top: 30px;
+      &--hi {
+        display: flex;
+        margin: 10px;
+      }
+      &--first{
+        display: flex;
+        flex-direction: column;
+        &--text {
+          margin: 5px;
+          padding: 3px;
+        }
+      }
+      &--second {
+        padding: 3px;
+        &--message {
+          height: 100%;
+          box-sizing: border-box;
+          margin: 0px;
+          // padding: 3px;
+        }
+      }
+      &--submit {
+        float: right;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+.about {
+  height: 500px;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+  &__para {
+    width: 50%;
+    padding-left: 50px;
+  }
+  &__image {
+    height: 50%;
+  }
+  &__bio {
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  }
+}
+
+.gallery {
+  // height: 500px;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+  &__line {
+    display: flex;
+    justify-content: center;
+    &--image {
+      :hover {
+        opacity: 0.8;
+      }
+      padding: 5px;
+      &--pic {
+        width: 300px;
+        height: 300px;
+      }
+    }
+  }
+}
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(247, 149, 145, 0.2);
+  height: 400px;
+  &__qa {
+    // border: 1px solid black;
+    text-align: center;
+    width: 80%;
+    box-sizing:border-box;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    &--quest {
+      font-weight: 800;
+    }
+  }
+}
