@@ -104,8 +104,6 @@ class App extends Component {
     </div>
     <div id="home" className="Vidu">
       <div className="App">
-        {/* <div className='circle'></div>
-        <div className='Jenny'>Welcomse </div> */}
       </div>
     </div>
     {/* <div  id="about" className='title'>About Us</div> */}
