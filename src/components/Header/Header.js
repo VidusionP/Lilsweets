@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import test from './assets/test.svg'
+import test from '../../assets/test.svg'
 
 import './Header.scss';
 
