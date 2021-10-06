@@ -38,7 +38,7 @@ export default class Gallery extends Component {
         return (
             <section className='gallery' id='gallery'>
                 <h1 className='gallery__title'>Gallery</h1>
-                <div className='bar123'></div>
+                <div className='bar'></div>
                 <div className='gallery__block'>
                     {images.map((item, i) => {
                         return (

@@ -29,7 +29,7 @@ render() {
         return (
             <section id="about" className={X>Y ? 'about':'about active1'}>
                 <h1 className={X>Y ? 'about__title':'about__title active1'}>About Us</h1>
-                <div className={X>Y ? 'about__bar':'about__bar active1'}></div>
+                <div className={X>Y ? 'bar':'bar active1'}></div>
                 <div className={X>Y ? 'about__bio':'about__bio active1'}>
                     <img className='about__bio--image' src={heart}/>
                     <p className='about__bio--para'>Consequat adipisicing quis enim consectetur irure sint. Incididunt duis culpa pariatur dolore ullamco reprehenderit occaecat fugiat ipsum nisi qui fugiat eiusmod enim. Ex nulla elit magna qui consequat laborum sint esse eu aliqua. <br /> <br/> Elit in cupidatat qui esse in fugiat sunt proident ad. Est excepteur culpa proident nisi amet laborum proident consectetur dolor sit quis reprehenderit non. Ex exercitation ex eu veniam duis tempor cupidatat occaecat. Laborum nulla proident quis enim consectetur eu tempor dolore pariatur sint occaecat velit.
