@@ -12,16 +12,21 @@ background-color: rgba(247, 149, 145, 0.2);
     margin: 0 5vw;
     &--block {
         padding-bottom: 6vw;
+        margin-bottom: 6vw;
+        border-bottom: 0.5vw solid rgba(0, 0, 0, 0.453);
         &__title {
-            font-size: 6vw;
+            font-size: 5vw;
             text-align:unset;
             font-weight: normal;
+            font-family: 'Montserrat-SemiBold';
+            height: unset;
         }
         &__para {
-            font-size: 4vw;
             font-family: 'Montserrat';
             letter-spacing: -0.3vw;
-            font-size: 5vw;
+            font-size: 4vw;
+            font-style: oblique;
+            margin-top: 1vw;
         }
     }
 }
