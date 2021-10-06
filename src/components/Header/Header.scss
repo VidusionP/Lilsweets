@@ -20,11 +20,11 @@ body, * {
         display: flex;
         align-items: center;
         &__image {
-          width: 5vw;
+          width: 8vw;
           margin-right: 4vw;
         }
         &__image1{
-          width: 8vw;
+          width: 10vw;
         }
       }
     }
@@ -57,11 +57,12 @@ body, * {
   display: flex;
   justify-content: center;
   animation:fade 1s ease-in-out;
-  height: 80vw;
+  height: 50vw;
   &__image {
     width: 100%;
     background-color:rgba(247, 149, 145, 0.2);
     z-index:-100;
+    object-fit: contain;
   
   
 

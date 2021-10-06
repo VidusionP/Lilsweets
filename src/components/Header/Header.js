@@ -28,11 +28,9 @@ export default function Header() {
                     <img className='header__top--logo' src={logo} alt='test'/>
                     <div className='header__top--menu'>
                         <img className='header__top--menu__image' onClick={() => setIsOpen(!isOpen)} src={isOpen?x:menu} />
-                        <div>
-                            <a href='https://www.instagram.com/lilsweets.to/' target='_blank'>
+                            <a style={{display:'flex'}} href='https://www.instagram.com/lilsweets.to/' target='_blank'>
                                 <img className='header__top--menu__image1' src={insta}/>
                             </a>
-                        </div>
                     </div>
                 </div>
                 <nav className={isOpen?'header__nav active123':'header__nav'}>
