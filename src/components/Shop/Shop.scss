@@ -1,0 +1,58 @@
+@import '../../styles//partials/_fonts.scss';
+@import '../../styles/partials/_mixins.scss';
+.shop {
+    background-color: rgba(247, 149, 145, 0.2);
+    
+    &__title {
+        font-family: Italic;
+        text-align: center;
+        padding: 5vw 0;
+    }
+    
+    &__products {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        &--card {
+            background-color: white;
+            width: 60%;
+            height: 80vw;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items:center;
+            margin-bottom: 6vw;
+            padding: 10vw 4vw;
+            border-radius: 10px;
+            &__title {
+                font-family: 'Montserrat-SemiBold';
+                height: unset;
+            }
+            &__image {
+                width: 40vw;
+                border-radius: 10px;
+            }
+            &__div {
+                height: 40vw;
+            }
+            &__desc {
+                text-align: center;
+                font-family: 'Ephesis';
+                font-size: 6vw;
+            }
+            &__price {
+                font-family: 'Pacifico';
+                font-size: 8vw;
+                color: rgb(242, 111, 107);
+            }
+            &__select {
+                width: 35vw;
+                border: none;
+                border-bottom: 0.5vw solid pink;
+                outline:none;
+                margin-top: 3vw;
+                font-family: 'Circular-Loom';
+            }
+        }
+    }
+}

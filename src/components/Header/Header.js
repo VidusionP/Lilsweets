@@ -1,38 +1,54 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
-import test from '../../assets/test.svg'
+import { useEffect, useState } from 'react';
+import logo from '../../assets/test.svg'
+import insta from '../../assets/insta.svg'
+import menu from '../../assets/hamburger.svg'
+import x from '../../assets/x.svg'
+import hero from '../../assets/lilsweetsfinal.png'
 
 import './Header.scss';
 
-export default class Header extends Component {
-    render() {
+export default function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const goku = (id) => {
+        const dest = document.querySelector("section[id=" +id.target.getAttribute("dest") +"]")
+        window.scrollTo({
+          top: dest.offsetTop-150,
+          behavior: 'smooth'
+        })
+        setIsOpen(false)
+    
+      }
         return (
             <>
             <header className='header'>
-                he
-                <div>
-                    <Link to='/'>
-                        <img src={test} className="header__logo" alt='test'/>
-
-                    </Link>
+                <div className='header__top'>
+                    <img className='header__top--logo' src={logo} alt='test'/>
+                    <div className='header__top--menu'>
+                        <img className='header__top--menu__image' onClick={() => setIsOpen(!isOpen)} src={isOpen?x:menu} />
+                        <div>
+                            <a href='https://www.instagram.com/lilsweets.to/' target='_blank'>
+                                <img className='header__top--menu__image1' src={insta}/>
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                {/* <img src={test} className="header__logo" alt='test'/>
-                <div className="header__top">
-                    <div onClick={this.goku} className='header__title' dest='home'>Home</div>
-                    <div onClick={this.goku} className='header__title'dest='about'>About Us</div>
-                    <div onClick={this.goku} className='header__title'dest='shop'>The Shop</div>
-                    <div onClick={this.goku} className='header__title'dest='gallery'>Gallery</div>
-                    <div onClick={this.goku} className='header__title'dest='faq'>FAQ</div>
-                    <div onClick={this.goku} className='header__title'dest='contact'>Contact Us</div>
-                </div>
-                <div className='header__insta'>
-                    Check Us Out!
-                    <a href='https://www.instagram.com/lilsweets.to/' target='_blank'>
-                    <img className='header__insta--logo' src={insta}/>
-                    </a>
-                </div> */}
+                <nav className={isOpen?'header__nav active123':'header__nav'}>
+                    <ul className='header__nav--subs'>
+                        <li onClick={goku} className='header__nav--subs__list' dest='home'>Home</li>
+                        <li onClick={goku} className='header__nav--subs__list' dest='about'>About</li>
+                        <li onClick={goku} className='header__nav--subs__list' dest='shop'>The Shop</li>
+                        <li onClick={goku} className='header__nav--subs__list' dest='gallery'>Gallery</li>
+                        <li onClick={goku} className='header__nav--subs__list' dest='faq'>FAQ</li>
+                        <li onClick={goku} className='header__nav--subs__list' dest='faq'>Contact</li>
+                    </ul>
+                </nav>
             </header>
+            <section id='home' className='hero'>
+                <img className='hero__image' src={hero} />
+            </section>
             </>
         )
     }
-}
