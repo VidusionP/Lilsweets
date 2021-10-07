@@ -5,16 +5,17 @@
     &__block {
         &--title {
             height: unset;
-            font-family:'Montserrat-SemiBold';
+            font-family:'Pacifico';
             text-align: unset;
             margin-bottom: 3vw;
             color:#F9EDEC;
             letter-spacing:-0.3vw;
             font-size: 5vw;
+            text-shadow: black 0 0 1px;
         }
         &--text {
             line-height: 7vw;
-            font-size: 4.5vw;
+            font-size: 4vw;
             letter-spacing:-0.3vw;
         }
     }
@@ -22,16 +23,17 @@
         &--title {
             letter-spacing:-0.3vw;
             height: unset;
-            font-family:'Montserrat-SemiBold';
+            font-family:'Pacifico';
             text-align: unset;
             margin-top: 4vw;
             margin-bottom: 3vw;
             color:#F9EDEC;
             font-size: 5vw;
+            text-shadow: black 0 0 1px;
         }
         &--text {
             line-height: 7vw;
-            font-size: 4.5vw;
+            font-size: 4vw;
             letter-spacing:-0.3vw;
         }
         &--image {
@@ -42,18 +44,19 @@
     &__sign {
         &--title {
             height: unset;
-            font-family:'Montserrat-SemiBold';
+            font-family:'Pacifico';
             text-align: unset;
             margin-top: 4vw;
             margin-bottom: 3vw;
             color:#F9EDEC;
             font-size: 5vw;
+            text-shadow: black 0 0 1px;
         }
         &--form{
             &__title {
                 margin-bottom: 3vw;
                 line-height: 7vw;
-            font-size: 4.5vw;
+            font-size: 4vw;
             letter-spacing:-0.3vw;
             }
             &__input {
