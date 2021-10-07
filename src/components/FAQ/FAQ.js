@@ -24,19 +24,25 @@ export default class FAQ extends Component {
                 <div className='bar123'></div>
                 <div className='faq__questions'>
                     <div className='faq__questions--block'>
-                        <div>
-                        <img id='hi' onClick={this.vidu123} src={plus}/><h2 className='faq__questions--block__title'>Are the sweets suitable for vegetarians?</h2>
-
+                        <div className='faq__questions--block__flex'>
+                            <img id='hi' onClick={this.vidu123} src={plus}/>
+                            <h2 className='faq__questions--block__title'>Are the sweets suitable for vegetarians?</h2>
                         </div>
                         <p id='hi' className='faq__questions--block__para'>Products differ, email us or message on instagram</p>
                     </div>
                     <div className='faq__questions--block'>
-                        <h2 className='faq__questions--block__title'>How do I place an order?</h2>
+                        <div className='faq__questions--block__flex'>
+                            <img id='hi2' onClick={this.vidu123} src={plus}/>
+                            <h2 className='faq__questions--block__title'>How do I place an order?</h2>
+                        </div>
                         <p id='hi2' className='faq__questions--block__para'>To place an order, please message us on Instagram for a quick response</p>
                     </div>
                     <div className='faq__questions--block'>
-                        <h2 className='faq__questions--block__title'>Do you offer delivery services?</h2>
-                        <p className='faq__questions--block__para'>Orders can be delivered locally or pickup would be in Brampton</p>
+                        <div className='faq__questions--block__flex'>
+                            <img id='hi3' onClick={this.vidu123} src={plus}/>
+                            <h2 className='faq__questions--block__title'>Do you offer delivery services?</h2>
+                        </div>
+                        <p id='hi3' className='faq__questions--block__para'>Orders can be delivered locally or pickup would be in Brampton</p>
                     </div>
                 </div>
             </section>

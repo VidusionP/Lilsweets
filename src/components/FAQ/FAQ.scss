@@ -15,12 +15,17 @@ background-color: rgba(247, 149, 145, 0.2);
         padding-bottom: 6vw;
         margin-bottom: 6vw;
         border-bottom: 0.5vw solid rgba(0, 0, 0, 0.453);
+        &__flex {
+            display: flex;
+            align-items: center;
+        }
         &__title {
             font-size: 5vw;
             text-align:unset;
             font-weight: normal;
             font-family: 'Montserrat-SemiBold';
             height: unset;
+            padding-left: 2vw;
         }
         &__para {
             font-family: 'Montserrat';

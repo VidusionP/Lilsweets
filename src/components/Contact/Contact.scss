@@ -5,9 +5,10 @@
     &__block {
         display: flex;
         justify-content: center;
-        font-weight: 600;
+        // font-weight: 600;
         letter-spacing: -0.3vw;
         font-size: 4vw;
+        
         &--text {
             flex: 1;
             text-align: center;
@@ -25,7 +26,7 @@
             flex: 1;
             letter-spacing: -0.2vw;
             &__title {
-                font-weight: 600;
+                font-family: 'Montserrat-SemiBold';
                 margin-bottom: 2vw;
             }
             &__sub {
@@ -36,7 +37,7 @@
             flex: 1;
             letter-spacing: -0.2vw;
             &__title {
-                font-weight: 600;
+                font-family: 'Montserrat-SemiBold';
                 margin-bottom: 2vw;
             }
             &__sub {
