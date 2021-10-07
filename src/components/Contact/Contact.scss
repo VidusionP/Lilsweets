@@ -1,37 +1,42 @@
 .footer {
     background-color: #f79591;
     padding: 4vw;
-    font-family: 'Montserrat-Italic';
+    font-family: 'Montserrat';
     &__block {
         &--title {
             height: unset;
             font-family:'Montserrat-SemiBold';
             text-align: unset;
             margin-bottom: 3vw;
-            color:white;
+            color:#F9EDEC;
+            letter-spacing:-0.3vw;
             font-size: 5vw;
         }
         &--text {
-            line-height: 8vw;
-            font-size: 4vw
+            line-height: 7vw;
+            font-size: 4.5vw;
+            letter-spacing:-0.3vw;
         }
     }
     &__contact {
         &--title {
+            letter-spacing:-0.3vw;
             height: unset;
             font-family:'Montserrat-SemiBold';
             text-align: unset;
             margin-top: 4vw;
             margin-bottom: 3vw;
-            color:white;
+            color:#F9EDEC;
             font-size: 5vw;
         }
         &--text {
-            line-height: 8vw;
-            font-size: 4vw
+            line-height: 7vw;
+            font-size: 4.5vw;
+            letter-spacing:-0.3vw;
         }
         &--image {
             margin-right:5vw;
+            margin-top: 2vw;
         }
     }
     &__sign {
@@ -41,13 +46,15 @@
             text-align: unset;
             margin-top: 4vw;
             margin-bottom: 3vw;
-            color:white;
+            color:#F9EDEC;
             font-size: 5vw;
         }
         &--form{
             &__title {
                 margin-bottom: 3vw;
-                font-size: 4vw
+                line-height: 7vw;
+            font-size: 4.5vw;
+            letter-spacing:-0.3vw;
             }
             &__input {
                 outline:none;
