@@ -1,59 +1,66 @@
 .footer {
     background-color: #f79591;
     padding: 4vw;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat-Italic';
     &__block {
-        display: flex;
-        justify-content: center;
-        // font-weight: 600;
-        letter-spacing: -0.3vw;
-        font-size: 4vw;
-        font-family: 'Montserrat-SemiBold';
+        &--title {
+            height: unset;
+            font-family:'Montserrat-SemiBold';
+            text-align: unset;
+            margin-bottom: 3vw;
+            color:white;
+            font-size: 5vw;
+        }
         &--text {
-            flex: 1;
-            text-align: center;
-            border-right: black solid 1px;
-            padding: 2vw 0;
-            &:last-child {
-                border-right: none;
+            line-height: 8vw;
+            font-size: 4vw
+        }
+    }
+    &__contact {
+        &--title {
+            height: unset;
+            font-family:'Montserrat-SemiBold';
+            text-align: unset;
+            margin-top: 4vw;
+            margin-bottom: 3vw;
+            color:white;
+            font-size: 5vw;
+        }
+        &--text {
+            line-height: 8vw;
+            font-size: 4vw
+        }
+        &--image {
+            margin-right:5vw;
+        }
+    }
+    &__sign {
+        &--title {
+            height: unset;
+            font-family:'Montserrat-SemiBold';
+            text-align: unset;
+            margin-top: 4vw;
+            margin-bottom: 3vw;
+            color:white;
+            font-size: 5vw;
+        }
+        &--form{
+            &__title {
+                margin-bottom: 3vw;
+                font-size: 4vw
+            }
+            &__input {
+                outline:none;
+                border:unset;
+                padding: 1vw;
+                margin-right: 2vw;
             }
         }
     }
-    &__block1 {
-        display: flex;
-        margin-top: 4vw;
-        &--contact {
-            flex: 1;
-            letter-spacing: -0.2vw;
-            &__title {
-                font-family: 'Montserrat-SemiBold';
-                margin-bottom: 2vw;
-            }
-            &__sub {
-                font-size: 3.5vw;
-            }
-        }
-        &--news {
-            flex: 1;
-            letter-spacing: -0.2vw;
-            &__title {
-                font-family: 'Montserrat-SemiBold';
-                margin-bottom: 2vw;
-            }
-            &__sub {
-                font-size: 3.5vw;
-            }
-            &__form {
-                &--input {
-                    width: 100%;
-                    border: unset;
-                    outline: none;
-                    border-radius: 5px;
-                    text-indent: 2vw;
-                }
-            }
-        }
-    }
+
+
+
+
     &__bar {
         width: 100%;
         height: 0.4vw;
