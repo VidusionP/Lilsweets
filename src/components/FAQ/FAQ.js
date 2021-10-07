@@ -22,10 +22,11 @@ export default class FAQ extends Component {
             })
             dest.classList.remove('block')
         } else {
+            this.setState({
+                [x]:true
+            })
         dest.classList.add('block')
-        this.setState({
-            [x]:true
-        })
+        
 
         }
         
