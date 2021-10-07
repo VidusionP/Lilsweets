@@ -14,17 +14,17 @@ body, * {
       position: relative;
       z-index: 9999;
       &--logo {
-        width: 15vw;
+        width: 20vw;
       }
       &--menu {
         display: flex;
         align-items: center;
         &__image {
-          width: 8vw;
-          margin-right: 4vw;
+          width: 7vw;
+
         }
         &__image1{
-          width: 10vw;
+          width: 8vw;
         }
       }
     }
@@ -57,7 +57,7 @@ body, * {
   display: flex;
   justify-content: center;
   animation:fade 1s ease-in-out;
-  height: 50vw;
+  height: 70vw;
   &__image {
     width: 100%;
     background-color:rgba(247, 149, 145, 0.2);

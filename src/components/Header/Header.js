@@ -25,13 +25,12 @@ export default function Header() {
             <>
             <header className='header'>
                 <div className='header__top'>
+                    {/* <img className='header__top--logo' src={logo} alt='test'/> */}
+                    <img className='header__top--menu__image' onClick={() => setIsOpen(!isOpen)} src={isOpen?x:menu} />
                     <img className='header__top--logo' src={logo} alt='test'/>
-                    <div className='header__top--menu'>
-                        <img className='header__top--menu__image' onClick={() => setIsOpen(!isOpen)} src={isOpen?x:menu} />
-                            <a style={{display:'flex'}} href='https://www.instagram.com/lilsweets.to/' target='_blank'>
-                                <img className='header__top--menu__image1' src={insta}/>
-                            </a>
-                    </div>
+                    <a style={{display:'flex'}} href='https://www.instagram.com/lilsweets.to/' target='_blank'>
+                        <img className='header__top--menu__image1' src={insta}/>
+                    </a>
                 </div>
                 <nav className={isOpen?'header__nav active123':'header__nav'}>
                     <ul className='header__nav--subs'>
