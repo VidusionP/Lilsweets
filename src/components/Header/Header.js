@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom'
 import { useEffect, useState } from 'react';
+import smoothscroll from 'smoothscroll-polyfill';
 import logo from '../../assets/test.svg'
 import insta from '../../assets/insta.svg'
 import menu from '../../assets/hamburger.svg'
@@ -11,7 +12,7 @@ import './Header.scss';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
-
+    smoothscroll.polyfill();
     const goku = (id) => {
         const dest = document.querySelector("section[id=" +id.target.getAttribute("dest") +"]")
         window.scrollTo({

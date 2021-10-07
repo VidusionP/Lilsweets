@@ -67,8 +67,6 @@ export default class Shop extends Component {
       }
 
     render() {
-        console.log(this.state.goods)
-        console.log(this.state)
         return (
             <>
                 <section className='shop' id='shop'>

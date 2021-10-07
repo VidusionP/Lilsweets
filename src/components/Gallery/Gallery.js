@@ -21,14 +21,12 @@ export default class Gallery extends Component {
         this.setState({
             top: document.querySelector('.gallery').getBoundingClientRect().top
         })
-        console.log(this.state.top)
         }
         handleScroll=(event)=> {
             this.setState({
                 scrollY: window.pageYOffset
             });
-            console.log(this.state.scrollY)
-            console.log(this.state.top)
+
         }
 
     render() {

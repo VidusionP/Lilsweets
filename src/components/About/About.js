@@ -14,14 +14,11 @@ export default class About extends Component {
     this.setState({
         top: document.querySelector('.slide').getBoundingClientRect().top
     })
-    console.log(this.state.top)
     }
     handleScroll=(event)=> {
         this.setState({
             scrollY: window.pageYOffset
         });
-        console.log(this.state.scrollY)
-        console.log(this.state.top)
     }
 render() {
     const Y = this.state.scrollY
