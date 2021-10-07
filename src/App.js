@@ -218,16 +218,16 @@ class App extends Component {
     <div id="faq" className='faq'>
       <div className='title'>Questions?</div>
       <div className='faq__qa'>
-        <div className='faq__qa--quest'>Are the sweets suitable for vegetarians?</div>
-        <div className='faq__qa--ans'>Products differ, email us or message on instagram</div>
+        <div className='faq__qa--quest'></div>
+        <div className='faq__qa--ans'></div>
       </div>
       <div className='faq__qa'>
-        <div className='faq__qa--quest'>How do I place an order?</div>
-        <div className='faq__qa--ans'>To place an order, please message us on Instagram for a quick response</div>
+        <div className='faq__qa--quest'></div>
+        <div className='faq__qa--ans'></div>
       </div>
       <div className='faq__qa'>
-        <div className='faq__qa--quest'>Do you offer delivery services?</div>
-        <div className='faq__qa--ans'>Orders can be delivered locally or pickup would be in Brampton</div>
+        <div className='faq__qa--quest'></div>
+        <div className='faq__qa--ans'></div>
       </div>
     </div>
     {/* <div id="contact" className='contact'>
