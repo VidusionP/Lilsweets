@@ -44,6 +44,14 @@
                 font-family: 'Pacifico';
                 font-size: 8vw;
                 color: rgb(242, 111, 107);
+                &--arr {
+                    position: absolute;
+                    top: 50%;
+                    right: -10%;
+                    transform: translate(-50%, -50%);
+                    pointer-events: none;
+                    
+                }
             }
             &__select {
                 width: 35vw;
@@ -53,7 +61,11 @@
                 margin-top: 3vw;
                 font-family: 'Circular-Loom';
                 -webkit-appearance: none;
+                text-indent: 2vw;
             }
         }
     }
 }
+
+
+

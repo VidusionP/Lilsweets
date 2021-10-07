@@ -4,6 +4,7 @@ import cake from '../../assets/Easter2.jpg'
 import truffle from '../../assets/cakes2.jpg'
 import egg from '../../assets/eggs3.jpg'
 import geo from '../../assets/smash1.jpg'
+import down from '../../assets/down.svg'
 
 
 import './Shop.scss';
@@ -83,13 +84,16 @@ export default class Shop extends Component {
                                 <h2 className='shop__products--card__title'>{item.Title}</h2>
                                 <p className='shop__products--card__desc'>{item.Desc}</p>
                                 <p className='shop__products--card__price'>${item.Prices[this.state[item.id]]}.00</p>
-                                <select className='shop__products--card__select' id={item.id} onChange={this.jen}>
-                                    {item.Quant.map((item,i) => {
-                                        return(
-                                            <option className='shop__products--card__select--option'>{item}</option>
-                                        )
-                                    })}
-                                </select>
+                                <div className='testvidu' style={{position:'relative'}}>
+                                    <img className='shop__products--card__price--arr' src={down}/>
+                                    <select className='shop__products--card__select' id={item.id} onChange={this.jen}>
+                                        {item.Quant.map((item,i) => {
+                                            return(
+                                                <option className='shop__products--card__select--option'>{item}</option>
+                                            )
+                                        })}
+                                    </select>
+                                </div>
                             </div>
                             )
                         })}
