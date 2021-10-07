@@ -10,6 +10,7 @@ background-color: rgba(247, 149, 145, 0.2);
 }
 &__questions {
     margin: 0 5vw;
+    padding-bottom: 5vw;
     &--block {
         padding-bottom: 6vw;
         margin-bottom: 6vw;
@@ -27,7 +28,12 @@ background-color: rgba(247, 149, 145, 0.2);
             font-size: 4vw;
             font-style: oblique;
             margin-top: 1vw;
+            display:none;
         }
     }
 }
+}
+
+.block {
+    display: block;
 }
