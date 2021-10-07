@@ -3,6 +3,7 @@
     padding: 4vw;
     font-family: 'Montserrat-Medium';
     &__block {
+        position: relative;
         &--title {
             height: unset;
             font-family:'Pacifico';
@@ -17,6 +18,13 @@
             line-height: 7vw;
             font-size: 4vw;
             letter-spacing:-0.3vw;
+        }
+        &--image {
+            position:absolute;
+            width:40vw;
+            top:0;
+            right:0;
+            // margin-right: 10vw;
         }
     }
     &__contact {

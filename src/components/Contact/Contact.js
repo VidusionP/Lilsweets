@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import instagram from '../../assets/instagram.svg'
 import mail from '../../assets/mail.svg'
+import mark from '../../assets/footer.png'
 
 import './Contact.scss';
 
@@ -25,6 +26,7 @@ export default class Contact extends Component {
                     <p onClick={goku} dest='about' className='footer__block--text'>About</p>
                     <p onClick={goku} dest='shop' className='footer__block--text'>Products</p>
                     <p onClick={goku} dest='gallery' className='footer__block--text'>Gallery</p>
+                    <img className='footer__block--image' src={mark}/>
                 </div>
                 <div className='footer__contact'>
                     <h2 className='footer__contact--title'>Get in Touch</h2>
