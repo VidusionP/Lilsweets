@@ -48,7 +48,7 @@
                     position: absolute;
                     top: 50%;
                     right: -10%;
-                    transform: translate(-50%, -50%);
+                    transform: translate(-60%, -30%);
                     pointer-events: none;
                     
                 }
@@ -57,11 +57,13 @@
                 width: 35vw;
                 border: none;
                 border-bottom: 0.5vw solid pink;
+                padding: 2vw 0;
                 outline:none;
                 margin-top: 3vw;
-                font-family: 'Circular-Loom';
+                font-family: 'Helvetica';
                 -webkit-appearance: none;
                 background-color: unset;
+                letter-spacing: -0.2vw;
                 text-indent: 2vw;
                 font-size: 4.5vw;
                 color: black;
