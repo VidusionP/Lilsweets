@@ -75,10 +75,12 @@ export default class Shop extends Component {
     Array.from(document.querySelectorAll('.shop__products--card')).map((item,i) => {
         return(
             this.setState({
-                [item.id+'1']: item.getBoundingClientRect().bottom 
+                [item.id+'1']: item.getBoundingClientRect().bottom/1.2
             })
+            
         )
     })
+    console.log(document.querySelector('.shop').getBoundingClientRect())
     }
     handleScroll=(event)=> {
         this.setState({
@@ -91,6 +93,7 @@ export default class Shop extends Component {
 
     render() {
         const X = this.state.scrollY
+        
         return (
             <>
                 <section className='shop' id='shop'>
