@@ -51,7 +51,7 @@ export default class Contact extends Component {
                 <div className='footer__bar'></div>
                 <div className='footer__bottom'>
                     <p className='footer__bottom--para'>Copyright 2020 LilSweets©, All rights Reserved.</p>
-                    
+                    <p className='footer__bottom--para1'>Designed by VivaWeb</p>
                 </div>
             </footer>
         )

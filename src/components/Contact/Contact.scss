@@ -33,7 +33,7 @@
             height: unset;
             font-family:'Pacifico';
             text-align: unset;
-            margin-top: 4vw;
+            margin-top: 0vw;
             // margin-bottom: 3vw;
             color:#F9EDEC;
             font-size: 5vw;
@@ -54,7 +54,7 @@
             height: unset;
             font-family:'Pacifico';
             text-align: unset;
-            margin-top: 4vw;
+            // margin-top: 4vw;
             // margin-bottom: 3vw;
             color:#F9EDEC;
             font-size: 5vw;
@@ -87,9 +87,19 @@
         margin: 3vw 0;
     }
     &__bottom {
-        font-size: 4vw;
+        font-size: 3vw;
         letter-spacing: -0.3vw;
         font-family: 'Montserrat';
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: rgb(92, 92, 92);
+        &--para {
+            margin: 2vw 0;
+        }
+        &--para1 {
+            margin-bottom: 2vw;
+        }
         &--social {
             display: flex;
             justify-content: center;
