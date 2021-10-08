@@ -1,12 +1,11 @@
 @import '../../styles//partials/_fonts.scss';
 @import '../../styles/partials/_mixins.scss';
 .faq {
-background-color: rgba(247, 149, 145, 0.2);
 &__title {
     font-family: Italic;
     text-align:center;
     padding: 5vw 0;
-    
+    color:#f79591;
 }
 &__questions {
     margin: 0 5vw;

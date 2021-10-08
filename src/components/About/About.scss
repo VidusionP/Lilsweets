@@ -15,7 +15,7 @@
         opacity: 0;
         transition: transform 500ms ease-in, opacity 400ms ease;
         // transition: opacity 100ms ease-in-out;
-        color:#f24842;
+        color:#f79591
     }
     &__bio{
         display: flex;
@@ -60,6 +60,7 @@ h2 {
     opacity: 1 !important;
     // transition: opacity 200ms ease-in-out;
     transform: translateX(0px);
+    transform: scale(1) !important
 }
 
 @keyframes hi123 {
@@ -81,7 +82,7 @@ h2 {
 }
 .bar {
     width: 30%;
-    background-color:#f24842;
+    background-color:#f79591;
     height: 0.5vw;
     margin:auto;
     margin-bottom: 8vw ;

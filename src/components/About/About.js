@@ -29,8 +29,10 @@ render() {
                 <div className={X>Y ? 'bar':'bar active1'}></div>
                 <div className={X>Y ? 'about__bio':'about__bio active1'}>
                     <img className='about__bio--image' src={heart}/>
-                    <p className='about__bio--para'>Consequat adipisicing quis enim consectetur irure sint. Incididunt duis culpa pariatur dolore ullamco reprehenderit occaecat fugiat ipsum nisi qui fugiat eiusmod enim. Ex nulla elit magna qui consequat laborum sint esse eu aliqua. <br /> <br/> Elit in cupidatat qui esse in fugiat sunt proident ad. Est excepteur culpa proident nisi amet laborum proident consectetur dolor sit quis reprehenderit non. Ex exercitation ex eu veniam duis tempor cupidatat occaecat. Laborum nulla proident quis enim consectetur eu tempor dolore pariatur sint occaecat velit.
-                        Velit et cillum esse amet ullamco cupidatat reprehenderit pariatur quis culpa ut anim enim amet. Dolor veniam duis et ea irure eiusmod. Et cillum ea nulla et occaecat laborum officia eu sit exercitation cupidatat. Est laborum commodo sit culpa reprehenderit reprehenderit et.</p> 
+                    <p className='about__bio--para'>Established in 2020 in Brampton, Ontario, Lil Sweets delivers quality desserts and pastries. Having years of baking experience, our team serves our customers with balanced desserts made from scratch. 
+                    <br/> <br/>Lil Sweets uses only the finest ingredients with the highest level of attention to small details. We strive to provide our customers with the utmost satisfaction.
+                    <br/><br/>We hope you enjoy our products!
+                    </p> 
                 </div>
             </section>
         )

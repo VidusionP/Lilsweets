@@ -35,7 +35,7 @@ export default class FAQ extends Component {
         return (
             <section className='faq' id='faq'>
                 <h1 className='faq__title'>Questions?</h1>
-                <div className='bar123'></div>
+                <div className='bar'></div>
                 <div className='faq__questions'>
                     <div className='faq__questions--block'>
                         <div onClick={this.vidu123} id='hi' className='faq__questions--block__flex' >

@@ -60,22 +60,46 @@ export default class Shop extends Component {
     cake:0,
     geo:0,
     truffle:0,
-    egg:0
+    egg:0,
+    pops1:0,
+    cake1:0,
+    geo1:0,
+    truffle1:0,
+    egg1:0,
+    scrollY:0
+    }
+
+    componentDidMount () {
+    window.addEventListener('scroll', this.handleScroll.bind(this))
+    
+    Array.from(document.querySelectorAll('.shop__products--card')).map((item,i) => {
+        return(
+            this.setState({
+                [item.id+'1']: item.getBoundingClientRect().bottom 
+            })
+        )
+    })
+    }
+    handleScroll=(event)=> {
+        this.setState({
+            scrollY: window.pageYOffset
+        });
     }
     jen = (e) => {
         this.setState({ [e.target.id]: e.target.options.selectedIndex})
       }
 
     render() {
+        const X = this.state.scrollY
         return (
             <>
                 <section className='shop' id='shop'>
                     <h1 className='shop__title'>The Shop</h1>
-                    <div className='bar123'></div>
+                    <div className='bar'></div>
                     <div className='shop__products'>
                         {this.state.goods.map((item,i) => {
                             return(
-                            <div className='shop__products--card' key={i}>
+                            <div id={item.id} className={X<[this.state[item.id+"1"]]?'shop__products--card':'shop__products--card active1'} key={i}>
                                 <div className='shop__products--card__div'>
                                     <img className='shop__products--card__image' src={item.image}/>
                                 </div>
