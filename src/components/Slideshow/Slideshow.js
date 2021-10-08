@@ -30,7 +30,7 @@ export default class Slideshow extends Component {
             for (i = 0; i < dots.length; i++) {
               dots[i].className = dots[i].className.replace(" active", "");
             }
-            slides[slideIndex-1].style.display = "block";  
+            slides[slideIndex-1].style.display = "flex";  
             dots[slideIndex-1].className += " active";
             clearTimeout(timer);
             timer = setTimeout(showSlides, 3000); // Change image every 2 seconds
@@ -42,9 +42,9 @@ export default class Slideshow extends Component {
       
             return (
                 <section className='slide'>
-                    <div className='mySlides fade'><img src={gallery1} style={{"width":"100%"}}/></div>
-                    <div className='mySlides fade'><img src={gallery2} style={{"width":"100%"}}/></div>
-                    <div className='mySlides fade'><img src={gallery3} style={{"width":"100%"}}/></div>
+                    <div className='mySlides fade'><img src={gallery1} className='slide__image'/></div>
+                    <div className='mySlides fade'><img src={gallery2} className='slide__image'/></div>
+                    <div className='mySlides fade'><img src={gallery3} className='slide__image'/></div>
                     <div className='slide__dots' style={{"text-align":"center"}}>
                         <span class="dot"></span> 
                         <span class="dot"></span> 

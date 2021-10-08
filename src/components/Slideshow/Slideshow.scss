@@ -3,6 +3,13 @@
   position: relative;
   margin: auto;
   animation: fade 3s ease-in;
+  margin-bottom: 10vw;
+  &__image {
+    width: 100%;
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 50px;
+  }
   &__dots {
       position: absolute;
       bottom: 5%;
@@ -13,8 +20,10 @@
 
 .mySlides {
     display: none;
-    height: 100vw;
+    justify-content: center;
+    margin: 5vw;
 }
+
 
 .fade {
     animation-name: fade;
