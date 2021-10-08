@@ -45,14 +45,14 @@ export default class FAQ extends Component {
                         <p id='hi' className='faq__questions--block__para'>Products differ, email us or message on instagram</p>
                     </div>
                     <div className='faq__questions--block'>
-                        <div onClick={this.vidu123} id='hi'  className='faq__questions--block__flex'>
+                        <div onClick={this.vidu123} id='hi2'  className='faq__questions--block__flex'>
                             <img id='hi2' src={this.state.hi2?minus:plus}/>
                             <h2 id='hi2'  className='faq__questions--block__title'>How do I place an order?</h2>
                         </div>
                         <p id='hi2' className='faq__questions--block__para'>To place an order, please message us on Instagram for a quick response</p>
                     </div>
                     <div className='faq__questions--block'>
-                        <div onClick={this.vidu123} id='hi'  className='faq__questions--block__flex'>
+                        <div onClick={this.vidu123} id='hi3'  className='faq__questions--block__flex'>
                             <img id='hi3' src={this.state.hi3?minus:plus}/>
                             <h2 id='hi3'  className='faq__questions--block__title'>Do you offer delivery services?</h2>
                         </div>
